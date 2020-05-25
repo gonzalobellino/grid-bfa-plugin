@@ -1,20 +1,52 @@
-# Ethereum Grid Plugin que permite iniciar un cliente Geth a la red permisionada Blockchain Federal Argentina (BFA)
+# Plugin para la herramienta [Ethereum Grid](https://grid.ethereum.org/) que gestiona un nodo Geth conectado a la Blockchain Federal Argentina (BFA) sobre la Testnet. 
 
 ## Description
-La idea de este *plugin* es facilitar el startup de un nodo para la realización de pruebas y permitir dar los primeros pasos utilizando la Blockchain Federal Argentina (BFA) evitando tener que lidear con la utilización de scripts o containers
+Utilizando Ethereum Grid junto con este plugin podemos gestionar rapidamente el inicio, sincronizacion y gestión de los parámetros básicos utilizados con [geth](https://geth.ethereum.org/) para el establecimiento de un "client" Ethereum con acceso al ambiente de Testnet de la Blockchain Federal Argentina. Al ser Ethereum Grid una herramienta visual la gestión de parametros a traves de una UI.
 
-La herramienta [Ethereum Grid](https://grid.ethereum.org/) es una interesante herramienta que mas alla de encontrarse aun en una etapa de evolución nos facilita la ejecución de diferentes herramientas del ecosistema Ethereum
+La herramienta [Ethereum Grid](https://grid.ethereum.org/) es una interesante herramienta que más alla de encontrarse aún en una etapa de evolución nos facilita la ejecución de diferentes herramientas del ecosistema Ethereum.
 
 <div align="center">
   <a href="https://youtu.be/v_Fpb-KuHU0"><img src="https://img.youtube.com/vi/v_Fpb-KuHU0/0.jpg"></a>
 </div>
 
+## Prerequisitos
+
+- Proceder a la descarga e instalación de la herramienta Ethereum Grid desde esta página [https://grid.ethereum.org/](https://grid.ethereum.org/).
 
 
-## Prerequisites
+## Instalación del plugin sobre Ethereum Grid
 
-## Instalation
+- Realizar una copia de seguridad del archivo plugins.json previo a su modificación
+  <Path de instalación>resources\app\ethereum_clients\client_plugins\plugins.json
 
-## Usage
+- Editar el archivo plugins.json e incorporar el siguiente elemento
 
+~~~
+  {
+    "name": "BFA.testnet",
+    "displayName": "BFA Testnet",
+    "type": "client",
+    "author": {
+      "name": "Gonzalo Bellino",
+      "email": "",
+      "address": ""
+    },
+    "location": "https://github.com/gonzalobellino/grid-bfa-plugin"
+  }
+~~~
 
+## Uso
+
+Luego de iniciar [Ethereum Grid ](https://grid.ethereum.org/) deberiamos visualizar ua lista de herramientas y clientes disponibles para ser gestionadas, incluida una opción nueva denominada "BFA Testnet"
+
+![Pantalla principal](bfatestnet.jpg)
+
+Desde la opción BFA Testnet ademas de iniciar el cliente Geth pre configurado también podremos utilizar un explorador de bloques y un cliente GraphQL (se recomienda aguardar a la sincronización de la cadena para su uso)
+
+Utilizando la pestaña "settings" se pueden observar los distintos parámetros de personalización para ajustar la ejecución del cliente Geth.
+
+![Configuración](configuration.jpg)
+
+También es posible visualizar la terminal con información de "logging"
+
+![Logging](terminal.jpg)
