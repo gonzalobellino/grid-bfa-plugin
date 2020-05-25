@@ -157,6 +157,24 @@ module.exports = {
       ]
     },
     {
+      id: 'rcpvhosts',
+      default: 'localhost',
+      label: 'list of virtual hostnames',
+      options: [
+        {
+          value: 'localhost',
+          label: 'Enabled for localhost',
+          flag:
+            '--rpcvhosts localhost'
+        },
+        {
+          value: 'all',
+          label: 'Enabled for All vhosts',
+          flag: '--rpcvhosts *'
+        }
+      ]
+    },
+    {
       id: 'ws',
       default: 'none',
       label: 'WebSockets API',
