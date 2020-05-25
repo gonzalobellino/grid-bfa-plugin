@@ -32,7 +32,7 @@ switch (process.platform) {
   }
 }
 
-console.log("copy database to " + dataDir)
+console.log("copy pre initialized BFA Testnet database to " + dataDir)
 fs.mkdirSync(dataDir, {recursive:true})
 fs.copySync(path.join(__dirname, 'geth'),path.join(dataDir, 'geth'),
   {overwrite : false})
