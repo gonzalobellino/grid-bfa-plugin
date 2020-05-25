@@ -50,3 +50,12 @@ Utilizando la pestaña "settings" se pueden observar los distintos parámetros d
 También es posible visualizar la terminal con información de "logging"
 
 ![Logging](terminal.jpg)
+
+
+## Directorio de destino default de la base de datos 
+
+Por default el directorio se creara segun el sistema operativo de destino en los siguientes directorios
+
+ - Linux --> ~/.BFA/testnet
+ - Windows --> env.APPDATA/BFA/testnet (env.APPDATA ej: --> c:/Users/Guest/AppData/Roaming/)
+ - darwin --> ~/Library/BFA/testnet
