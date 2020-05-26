@@ -168,6 +168,12 @@ module.exports = {
       ]
     },
     {
+      id: 'rpcport',
+      label: 'RPC Port',
+      flag: '--rpcport %s',
+      default: '8545'
+    },
+    {
       id: 'rcpvhosts',
       default: 'localhost',
       label: 'list of virtual hostnames',
@@ -204,7 +210,6 @@ module.exports = {
       flag: '--port %s',
       default: '30303'
     },
-
     {
       id: 'graphql',
       label: 'Enable GraphQL Server',
@@ -217,6 +222,12 @@ module.exports = {
         },
         { value: 'false', flag: '', label: 'No' }
       ]
+    },
+    {
+      id: 'graphqlport',
+      label: 'GraphQL Port',
+      flag: '--graphql.port %s',
+      default: '8547'
     },
     {
       id: 'signer',
