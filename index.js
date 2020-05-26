@@ -1,5 +1,10 @@
 const path = require('path');
-const fs = require('fs-extra')
+const fs = require('fs')
+
+//Preinitialized geth database base64 form
+//I can't found any another way of init this plugin without any kind of fail using modules for extracting
+//a file from plugin package.
+const BFA_GETH_DB = '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'
 
 let  platform = 'windows'
 let  networkEnv = 'testnet'
@@ -33,9 +38,15 @@ switch (process.platform) {
 }
 
 console.log("copy pre initialized BFA Testnet database to " + dataDir)
-fs.mkdirSync(dataDir, {recursive:true})
-fs.copySync(path.join(__dirname, 'geth'),path.join(dataDir, 'geth'),
-  {overwrite : false})
+let chaindataPath = path.join(dataDir,"geth", "chaindata")
+let lightchaindataPath = path.join(dataDir,"geth", "lightchaindata")
+let leveldbFilename = "000001.log"
+
+fs.mkdirSync(chaindataPath, {recursive:true})
+fs.mkdirSync(lightchaindataPath, {recursive:true})
+
+fs.writeFileSync(path.join(chaindataPath, leveldbFilename), Buffer.from(BFA_GETH_DB,'base64'))
+fs.writeFileSync(path.join(lightchaindataPath, leveldbFilename), Buffer.from(BFA_GETH_DB,'base64'))
 
 const keystoreDir =
   process.platform === 'win32' ? `${dataDir}\\keystore` : `${dataDir}/keystore`
