@@ -19,7 +19,7 @@ La herramienta [Ethereum Grid](https://grid.ethereum.org/) es una interesante he
 - Realizar una copia de seguridad del archivo plugins.json previo a su modificación
   <Path de instalación>resources\app\ethereum_clients\client_plugins\plugins.json
 
-- Editar el archivo plugins.json e incorporar el siguiente elemento
+- Editar el archivo *plugins.json* e incorporar el siguiente elemento
 
 ~~~
   {
@@ -34,6 +34,8 @@ La herramienta [Ethereum Grid](https://grid.ethereum.org/) es una interesante he
     "location": "https://github.com/gonzalobellino/grid-bfa-plugin"
   }
 ~~~
+
+Tip: Ejemplo de archivo plugins.json modificado en este [link](plugins.json)
 
 ## Uso
 
