@@ -1,0 +1,35 @@
+[
+  {
+    "name": "clef",
+    "displayName": "Clef",
+    "type": "signer",
+    "author": {
+      "name": "Ryan Ghods",
+      "email": "ryan@ethereum.org",
+      "address": "84741b205fe071833b97b081a87dc39fae078ff3"
+    },
+    "location": "https://github.com/ryanio/grid-clef-plugin"
+  },
+  {
+    "name": "ipfs",
+    "displayName": "IPFS",
+    "type": "storage",
+    "author": {
+      "name": "Ryan Ghods",
+      "email": "ryan@ethereum.org",
+      "address": "84741b205fe071833b97b081a87dc39fae078ff3"
+    },
+    "location": "https://github.com/ryanio/grid-ipfs-plugin"
+  },
+  {
+    "name": "BFA.testnet",
+    "displayName": "BFA Testnet",
+    "type": "client",
+    "author": {
+      "name": "Gonzalo Bellino",
+      "email": "",
+      "address":"51632f2eb5e91324594bae47172e77030f014f1d"
+    },
+    "location": "https://github.com/gonzalobellino/grid-bfa-plugin"
+  }
+]
