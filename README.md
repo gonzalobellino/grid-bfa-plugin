@@ -9,6 +9,7 @@ La herramienta [Grid](https://grid.ethereum.org/) es una interesante herramienta
   <a href="https://youtu.be/v_Fpb-KuHU0"><img src="https://img.youtube.com/vi/v_Fpb-KuHU0/0.jpg"></a>
 </div>
 
+[https://youtu.be/v_Fpb-KuHU0](https://youtu.be/v_Fpb-KuHU0)
 ## Prerequisitos
 
 - Proceder a la descarga e instalación de la herramienta **Grid** desde esta página [https://grid.ethereum.org/](https://grid.ethereum.org/). Este plugin ha sido probado con **Grid v1.6.2**
