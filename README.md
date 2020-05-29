@@ -19,16 +19,16 @@ La herramienta [Grid](https://grid.ethereum.org/) es una interesante herramienta
 
 #### Linux (Portable)
   - Sobreescribir el archivo **$HOME/.config/grid/config.json** generado en la instalación con esta nueva versión 
-  [appimage/config.json](appimage/config.json)
+  [config.json](grid/config.json)
 
 #### Linux (debian)
-  - Sobreescribir el archivo **/opt/Grid/resources/app/ethereum_clients/client_plugins\plugins.json** generado en la instalación con esta nueva versión [debian/plugins.json](debian/plugins.json)
+  - Sobreescribir el archivo **/opt/Grid/resources/app/ethereum_clients/client_plugins\plugins.json** generado en la instalación con esta nueva versión [config.json](grid/config.json)
 
 #### Windows (zip)
-  - Sobreescribir el archivo **<Path de instalación>resources\app\ethereum_clients\client_plugins\plugins.json** generado en la instalación con esta nueva versión [win/plugins.json](win/plugins.json)
+  - Sobreescribir el archivo **<Path de instalación>resources\app\ethereum_clients\client_plugins\plugins.json** generado en la instalación con esta nueva versión [config.json](grid/config.json)
 
 #### Windows Installer
-  - Sobreescribir el archivo **%APPDATA%\Local\Programs\grid\resources\app\ethereum_clients** generado en la instalación con esta nueva versión [win/plugins.json](win/plugins.json)
+  - Sobreescribir el archivo **%APPDATA%\Local\Programs\grid\resources\app\ethereum_clients** generado en la instalación con esta nueva versión [config.json](grid/config.json)
 
 
 <br/>
@@ -70,7 +70,7 @@ Por default el directorio se creara según el sistema operativo de destino en lo
 
 ## Uso
 
-Luego de iniciar [Ethereum Grid ](https://grid.ethereum.org/) deberiamos visualizar ua lista de herramientas y clientes disponibles para ser gestionadas, incluida una opción nueva denominada "BFA Testnet"
+Luego de iniciar [Grid](https://grid.ethereum.org/) deberiamos visualizar ua lista de herramientas y clientes disponibles para ser gestionadas, incluida una opción nueva denominada "BFA Testnet"
 
 ![Pantalla principal](bfatestnet.jpg)
 
